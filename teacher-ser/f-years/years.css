@@ -1,0 +1,215 @@
+:root{
+    /* CSS HEX */
+--black: #1F2823ff;
+--black-wight: #8a817cff;
+--silver: #bcb8b1ff;
+--wight : #f4f3eeff;
+--blue: #7765e3ff;
+/* CSS HEX */
+--wight-gr: #dad7cdff;
+--sage: #dad7cdff;
+--fern-green: #588157ff;
+--hunter-green: #3a5a40ff;
+--brunswick-green: #344e41ff;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background:#f4f3eeff;
+    width: 100%;
+}
+.header{
+    height: 60px;
+}
+.body{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   margin-top:30px;
+   margin-bottom: 40px;
+   width: 100%;
+}
+.body section{
+    margin-top: 40px;
+    width: 100%;
+    min-height: 900px;
+    padding: 0 50px;
+    background:#f4f3eeff;
+    border-radius: 12px;
+}
+.detils-cor{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.detils-cor h2{
+    padding-bottom: 50px;
+    font-weight: 900;
+    font-size: 2.6em;
+    color: var(--blue);
+}
+.detils-cor p{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+h1{
+    margin-top: 15px;
+    padding-top: 10px;
+    color: var(--black);
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: 800;
+    width: 350px;
+    height: 60px;
+    background-color:violet;
+    border-radius: 9px 0 0 9px;
+    z-index: 3;
+}
+.cors{
+    height: 700px;
+    box-shadow: 3px 3px  50px 3px rgba(0,0,0,.5);
+    padding-top:20px; 
+}
+.cards-ye{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 97%;
+    height: 550px;
+    overflow: auto;
+    gap: 60px;
+    
+}
+.cards-ye .side{
+    height: 500px ;
+    width: 200px;
+}
+.cards-ye .card-ye{
+    width: 380px;
+    height: 500px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    transition: 1s ;
+
+}
+
+.cards-ye .card-ye img{
+    width: 100%;
+    height: 400px;
+    border-radius: 9px;
+    transition: 1s;
+
+}
+.cards-ye .card-ye img:hover{
+    transform: scale(1.05);
+}
+.line{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 160px;
+    height: 3px;
+    background-color: var(--blue);
+}
+.cards-ye .card-ye .info{
+    width: 375px;
+    height: 300px;
+    padding: 10px 15px;
+    background:linear-gradient(to right bottom ,#dad7cdff ,rgb(30, 134, 204)  );
+    border-radius: 9px;
+    position: relative;
+    top: -20px;
+    
+}
+.cards-ye .card-ye .info h3{
+    font-size: 1.2em;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    color: rgb(136, 4, 136);
+
+
+} 
+.cards-ye .card-ye .info span{
+    color: black;
+    font-size: 1.3em;
+}
+.cards-ye .card-ye .show-cors{
+    width: 150px;
+    height: 40px;
+    padding: 8px 15px 10px 0;
+    border-radius: 20px;
+    border: solid var(--fern-green) 2px;
+    background-color: var(--wight);
+}
+.cards-ye .card-ye .show-cors:hover{
+    background-color: var(--sage);
+    color: white;
+
+}
+.cards-ye .card-ye .show-cors a{
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--fern-green);
+}
+.cards-ye .card-ye .info .price{
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    gap:10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cards-ye .card-ye .info .price div{
+    display: flex;
+    gap: 6px;
+}
+.cards-ye .card-ye .info .price a {
+    font-size: 1.3em;
+    color:black;
+}
+.cards-ye .card-ye .info .price .money{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 80px;
+    height: 42px;
+    background-color: var(--wight);
+    border-radius: 4px;
+    border: 2px var(--fern-green) solid;
+}
+
+@media (max-width:1171px){
+.cards-ye .card-ye img{
+    height: 200px;
+}
+
+}
+@media (max-width:500px){
+    h1{
+    width: 260px;}
+    .cors{
+        width: 100%;
+    }
+    .body section{
+        padding: 10px;
+    }
+    .cards-ye .card-ye{
+        width: 300px;
+    }
+    .cards-ye .card-ye .info{
+        width: 290px;
+    }
+}
+@media (max-width:320px){
+    section{
+        padding: 0;
+    }
+}
